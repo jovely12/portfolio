@@ -1,5 +1,5 @@
 import axios from 'axios';
-const BASE_URL = 'https://port-0-portfolio-server-2aat2clurqq3vo.sel5.cloudtype.app';
+const BASE_URL = 'http://3.37.198.150:3500';
 
 export default axios.create({
 	baseURL: BASE_URL

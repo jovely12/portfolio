@@ -52,8 +52,6 @@ const NewProduct = () => {
           }
         );
         console.log(JSON.stringify(response?.data));
-        console.log("aaaaaaaaaaaa",response.data);
-        // navigate('/', { replace: true });
 
       } catch (err) {
         console.log(err)
@@ -88,9 +86,7 @@ const NewProduct = () => {
                   },
                   withCredentials: true
                 }
-              );
-              //navigate('/', { replace: true });
-              
+              );          
             }
             catch (err) {
               console.log(err)

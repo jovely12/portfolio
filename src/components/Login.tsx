@@ -132,35 +132,6 @@ const Login = () => {
       </Container>
     </ThemeProvider>
   );
-
-
-		// <section>
-		// 	<p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} >{errMsg}</p>
-		// 	<h1>Sign In</h1>
-		// 	<form onSubmit={handleSubmit}>
-		// 		<label htmlFor="username">Username:</label>
-		// 		<input
-		// 			type="text"
-		// 			id="username"
-		// 			ref={userRef}
-    //       autoComplete="off"
-    //       value={user}
-		// 			onChange={(e) => setUser(e.target.value)}
-		// 			required
-		// 		/>
-
-		// 		<label htmlFor="password">Password:</label>
-		// 		<input
-		// 			type="password"
-		// 			id="password"
-		// 			onChange={(e) => setPwd(e.target.value)}
-		// 			value={pwd}
-		// 			required
-		// 		/>
-		// 		<button>Sign In</button>
-		// 	</form>
-		// </section>
-
 }
 
 export default Login

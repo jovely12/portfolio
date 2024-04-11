@@ -109,7 +109,7 @@ const Header = ({ viewCart, setViewCart }: PropsType) => {
 							noWrap
               component="a"
               fontWeight="bold"
-							href="/"
+							href="https://jovely12.github.io/portfolio/"
 							sx={{
 								flexGrow: 1,
                 mr: 2,    

@@ -29,7 +29,7 @@ const ProductList = () => {
 
     useEffect(() => {
         const fetchProducts = async (): Promise<ProductType[]> => {
-            const data = await fetch('https://port-0-portfolio-server-2aat2clurqq3vo.sel5.cloudtype.app/visitor')
+            const data = await fetch('http://3.37.198.150:3500/visitor')
                 .then(res => {
                     return res.json()
                 })
@@ -38,15 +38,15 @@ const ProductList = () => {
                 })
             return data
         }
-        console.log("------------------Reload------------------")
         fetchProducts().then(products => setProducts(products))
     }, [])
 
 
     if (products?.length) {
+        console.log("data",products)
         pageContent = products.map(product => {
             const inCart: boolean = cart.some(item => item.sku === product.sku)
-
+           
             return (
                 <Grid item sx={{display:'flex',justifyContent:'center'}} xs={12} sm={6} md={4} lg={3}>
                 <Product

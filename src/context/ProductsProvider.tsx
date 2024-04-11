@@ -29,7 +29,7 @@ export const ProductsProvider = ({ children }: ChildrenType): ReactElement => {
 
     useEffect(() => {
         const fetchProducts = async (): Promise<ProductType[]> => {
-          const data = await fetch('https://port-0-portfolio-server-2aat2clurqq3vo.sel5.cloudtype.app/visitor')
+          const data = await fetch('http://3.37.198.150:3500/visitor')
             .then(res => {
                 return res.json()
             })

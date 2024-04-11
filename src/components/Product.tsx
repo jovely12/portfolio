@@ -25,7 +25,7 @@ type PropsType = {
     inCart: boolean,
 }
 
-export const uploads = 'https://port-0-portfolio-server-2aat2clurqq3vo.sel5.cloudtype.app/uploads/'
+export const uploads = 'http://3.37.198.150:3500/uploads/'
 
 const Product = ({ product, dispatch, REDUCER_ACTIONS, inCart }: PropsType): ReactElement => {
     const navigate = useNavigate();
